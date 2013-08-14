@@ -1,0 +1,9 @@
+﻿Release
+obj
+bin
+Logs
+*.suo
+*.log
+*.user
+*.pdb
+SourceCode/packages/

@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>OnebinMVC</title> 
+    @Styles.Render("~/Content/css")
+    @RenderSection("style", required: false)
+</head>
+<body>
+    @RenderBody()
+    @Scripts.Render("~/bundles/Plugins")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
