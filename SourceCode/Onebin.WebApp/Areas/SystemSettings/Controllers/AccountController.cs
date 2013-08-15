@@ -1,6 +1,5 @@
 ﻿using Leafing.Core.Logging;
 using Leafing.Data;
-using Onebin.Domain.Views;
 using Onebin.Extra.Attr;
 using Onebin.Extra.Dic;
 using Onebin.Extra.Util;

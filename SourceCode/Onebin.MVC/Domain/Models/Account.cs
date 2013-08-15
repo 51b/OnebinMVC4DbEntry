@@ -100,12 +100,6 @@ namespace Onebin.MVC.Domain
         }
 
         /// <summary>
-        /// 账户详情
-        /// </summary>
-        [HasOne]
-        public AccountDetail AccountDetail { get; set; }
-
-        /// <summary>
         /// 验证登录
         /// </summary>
         /// <param name="loginId">登录Id</param>

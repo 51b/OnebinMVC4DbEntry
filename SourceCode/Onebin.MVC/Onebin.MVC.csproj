@@ -53,7 +53,6 @@
     <Compile Include="AuthorizationManager.cs" />
     <Compile Include="Controllers\AuthorizationController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
-    <Compile Include="Domain\Models\AccountDetail.cs" />
     <Compile Include="Domain\IDbObjectModelHelper.cs" />
     <Compile Include="Domain\Models\Account.cs" />
     <Compile Include="Domain\Models\DictionaryCatalog.cs" />
