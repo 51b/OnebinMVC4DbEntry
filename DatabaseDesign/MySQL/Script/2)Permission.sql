@@ -42,20 +42,6 @@ ELSE
 INSERT `Permission` (`Id`,`MenuId`,`Name`,`Action`) VALUES ('M0201P01','M0201','页面访问',''); 
 END IF; 
 
-IF EXISTS (SELECT 1 FROM `Permission` WHERE `Id` = 'M0201P0101') 
-THEN 
-UPDATE `Permission` SET `MenuId` = 'M0201', `Name`='查看用户信息', `Action`='/SystemSettings/Account/GetAccountInfo' WHERE `Id` = 'M0201P0101'; 
-ELSE 
-INSERT `Permission` (`Id`,`MenuId`,`Name`,`Action`) VALUES ('M0201P0101','M0201','查看用户信息','/SystemSettings/Account/GetAccountInfo'); 
-END IF; 
-
-IF EXISTS (SELECT 1 FROM `Permission` WHERE `Id` = 'M0201P010101') 
-THEN 
-UPDATE `Permission` SET `MenuId` = 'M0201', `Name`='编辑用户信息', `Action`='/SystemSettings/Account/EditAccountInfo' WHERE `Id` = 'M0201P010101'; 
-ELSE 
-INSERT `Permission` (`Id`,`MenuId`,`Name`,`Action`) VALUES ('M0201P010101','M0201','编辑用户信息','/SystemSettings/Account/EditAccountInfo'); 
-END IF; 
-
 IF EXISTS (SELECT 1 FROM `Permission` WHERE `Id` = 'M0202P01') 
 THEN 
 UPDATE `Permission` SET `MenuId` = 'M0202', `Name`='页面访问', `Action`='' WHERE `Id` = 'M0202P01'; 
@@ -63,7 +49,7 @@ ELSE
 INSERT `Permission` (`Id`,`MenuId`,`Name`,`Action`) VALUES ('M0202P01','M0202','页面访问',''); 
 END IF; 
 
-DELETE FROM `Permission` WHERE `Id` NOT IN ('M0201P01','M0201P0101','M0201P010101','M0202P01'); 
+DELETE FROM `Permission` WHERE `Id` NOT IN ('M0201P01','M0202P01'); 
 
 
 
